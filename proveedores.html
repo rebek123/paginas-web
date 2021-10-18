@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-with, initial-scale-1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bimbo</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div class="reloj">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var date = new Date();
+                    var d  = date.getDate();
+                    var day = (d < 10) ? '0' + d : d;
+                    var m = date.getMonth() + 1;
+                    var month = (m < 10) ? '0' + m : m;
+                    var yy = date.getYear();
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+                    document.write(day + "/" + month + "/" + year);
+                    //]]>
+                </script>
+                <script type="text/javascript">
+                    function startTime(){
+                    today=new Date();
+                    h=today.getHours();
+                    m=today.getMinutes();
+                    s=today.getSeconds();
+                    m=checkTime(m);
+                    s=checkTime(s);
+                    document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+                    t=setTimeout('startTime()',500);}
+                    function checkTime(i)
+                    {if (i<10) {i="0" + i;}return i;}
+                    window.onload=function(){startTime();}
+                </script>
+                <div id="reloj" style="font-size:20px;"></div>  
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="#">Proveedores</a></li>
+            </ul>
+        </div>
+    </header>
+        <img class="encabezado" width="100%" src="imagenes/encabezado.jpg">
+    <div id="cuerpo">
+        <div>   <!-- cuerpo de la página -->
+            <h1>Proveedores</h1>
+                <h4>Nuestros proveedores son parte fundamental de nuestra cadena de valor. Ellos nos permiten mantener la calidad en los productos y ser competitivos internacionalmente. En Grupo Bimbo buscamos fortalecer la relación a largo plazo y estrechar los vínculos de colaboración. <br> <br>
+
+                Conoce nuestro “Portal de Proveedores”, un canal de comunicación rápido y eficiente en el que compartimos con nuestros socios estratégicos: información relevante, herramientas de comercio electrónico, tendencias y convocatorias, para promover la mejora de nuestra cadena de valor. <br> <br> <h3><a target="_blank" href="https://www.grupobimbo.com/es">Te invitamos a conocerlo.</a></h3>
+
+                <h3>¡Visita nuestras fábricas!</h3>
+
+                BIMBO AZCAPOTZALCO <br>
+                visitasbm@grupobimbo.com<br><br>
+                 BIMBO CENTRO<br>
+                joel.munoz@grupobimbo.com<br><br>
+                 BIMBO CHIHUAHUA<br>
+                gabriela.i.perez@grupobimbo.com<br><br>
+                 BIMBO GOLFO<br>
+                marisol.saldana@grupobimbo.com<br><br>
+                 BIMBO HERMOSILLO<br>
+                yanin.escalante@grupobimbo.com<br><br>
+                 BIMBO NORTE<br>
+                alejandra.iniguez@grupobimbo.com<br><br>
+                 BIMBO OCCIDENTE<br>
+                victoria.hernandez@grupobimbo.com<br><br>
+                 BIMBO PACÍFICO<br>
+                jesus.a.sanchez@grupobimbo.com<br><br>
+                 BIMBO PUEBLA<br>
+                paola.a.martinez@grupobimbo.com<br><br>
+                 BIMBO SAN LUIS POTOSÍ<br>
+                julio.covarrubias@grupobimbo.com<br><br>
+                 BIMBO SURESTE<br>
+                jose.salas02@grupobimbo.com<br><br>
+                 BIMBO TIJUANA<br>
+                obmexbti.visitasbti@grupobimbo.com<br><br>
+                 BIMBO TOLUCA<br>
+                omar.calderon@grupobimbo.com<br><br>
+             BIMBO YUCATÁN<br>    
+                alexis.ceballos@grupobimbo.com<br><br>
+                </h4>
+            <br><br>
+        </div>
+    </div>
+</body>

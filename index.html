@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-with, initial-scale-1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bimbo</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div class="reloj">
+                <script type="text/javascript">
+                    //<![CDATA[
+                    var date = new Date();
+                    var d  = date.getDate();
+                    var day = (d < 10) ? '0' + d : d;
+                    var m = date.getMonth() + 1;
+                    var month = (m < 10) ? '0' + m : m;
+                    var yy = date.getYear();
+                    var year = (yy < 1000) ? yy + 1900 : yy;
+                    document.write(day + "/" + month + "/" + year);
+                    //]]>
+                </script>
+                <script type="text/javascript">
+                    function startTime(){
+                    today=new Date();
+                    h=today.getHours();
+                    m=today.getMinutes();
+                    s=today.getSeconds();
+                    m=checkTime(m);
+                    s=checkTime(s);
+                    document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+                    t=setTimeout('startTime()',500);}
+                    function checkTime(i)
+                    {if (i<10) {i="0" + i;}return i;}
+                    window.onload=function(){startTime();}
+                </script>
+                <div id="reloj" style="font-size:20px;"></div>  
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="sustentabilidad.html">Sustentabilidad</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="proveedores.html">Proveedores</a></li>
+            </ul>
+        </div>
+    </header>
+        <img class="encabezado" width="100%" src="imagenes/encabezado.jpg">
+    <div id="cuerpo">
+        <div>
+            <h1>Algunos de nuestros anuncios</h1>
+                <div align="center"><img src="img/becas.jpg"><br><img src="img/aviso.jpg"><iframe width="560" height="315" src="https://www.youtube.com/embed/fFl_vyuJC-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/nvtTSpNPa7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/wqrmP3Jfb6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/7UOTMvb56YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <br><br>
+            <h1>Nuestras marcas</h1>
+                <br>
+            <div>
+                <img width="25%" src="imagenes/1.png"><img width="25%" src="imagenes/2.png"><img width="25%" src="imagenes/3.png"><img width="25%" src="imagenes/4.png">
+                <img width="25%" src="imagenes/5.png"><img width="25%" src="imagenes/6.png"><img width="25%" src="imagenes/7.png"><img width="25%" src="imagenes/8.png">
+                <img width="25%" src="imagenes/9.png"><img width="25%" src="imagenes/10.png"><img width="25%" src="imagenes/11.png"><img width="25%" src="imagenes/12.png">
+                <img width="25%" src="imagenes/13.png"><img width="25%" src="imagenes/14.png"><img width="25%" src="imagenes/15.png"><img width="25%" src="imagenes/16.png">
+                <img width="25%" src="imagenes/17.png"><img width="25%" src="imagenes/18.png"><img width="25%" src="imagenes/19.png"><img width="25%" src="imagenes/20.png">
+            </div>
+        </div>
+    </div>
+</body>
